@@ -1,12 +1,17 @@
 package com.uninorte.andresarguelles.parsequery;
 
+import android.location.Location;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.parse.Parse;
+import com.parse.ParseQuery;
+import com.parse.ParseQueryAdapter;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -25,6 +30,9 @@ public class MainActivity extends ActionBarActivity {
      * The {@link android.support.v4.view.ViewPager} that will host the section contents.
      */
     ViewPager mViewPager;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +55,8 @@ public class MainActivity extends ActionBarActivity {
         // Enable Local Datastore.
         Parse.enableLocalDatastore(this);
         Parse.initialize(this, "hripTdiKwFmPRWi66AXYow9Zr7Ee4xsElZauQdc5", "DWpBBJyqSh2HgKXsceMD9wfCbkuYBO4cdENlZmVY");
+
+
 
     }
 

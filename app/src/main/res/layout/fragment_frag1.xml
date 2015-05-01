@@ -3,9 +3,18 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ListView
+        android:id="@+id/posts_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6" >
+    </ListView>
+
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:text="Start Query"
-        android:id="@+id/buttonQuery" />
+        android:id="@+id/buttonQuery"
+        android:layout_weight="1"
+        android:layout_margin="1dp" />
 </LinearLayout>
